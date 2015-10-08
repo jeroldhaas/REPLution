@@ -1,4 +1,4 @@
-﻿namespace Plugin1
+﻿namespace REPLution
 
 open Microsoft.VisualStudio.Text.Editor
 open Microsoft.VisualStudio.Text.Tagging

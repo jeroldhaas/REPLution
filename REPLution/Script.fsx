@@ -1,8 +1,7 @@
-﻿// Learn more about F# at http://fsharp.org. See the 'F# Tutorial' project
-// for more guidance on F# programming.
+﻿#load "Scripts/load-references.fsx"
+#load "Scripts/load-project.fsx"
 
-#load "Library1.fs"
-open Plugin1
+open REPLution
 
 // Define your library scripting code here
 

@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "REPLution", "REPLution\REPLution.fsproj", "{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C11CC135-6202-4B18-B737-6AA98FBD5B39}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		REPLution\docs\README.md = REPLution\docs\README.md
+		README.md.html = README.md.html
+		WE-Markdown.css = WE-Markdown.css
+		WE-Markdown.html = WE-Markdown.html
+		WE-Palette.css = WE-Palette.css
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
