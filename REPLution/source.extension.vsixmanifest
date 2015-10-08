@@ -2,7 +2,7 @@
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="Plugin1.Jared Hester.861f5d78-0c5c-4bc7-9de3-73d16dc8ca69" Version="1.0" Language="en-US" Publisher="Jared Hester" />
-    <DisplayName>Plugin1</DisplayName>
+    <DisplayName>REPLution</DisplayName>
     <Description>VS Extension only F#</Description>
     <Tags>fsharp, f#</Tags>
   </Metadata>
