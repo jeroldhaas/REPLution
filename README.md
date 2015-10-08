@@ -1,5 +1,12 @@
 # REPLution
-Enhanced FSI
+Enhanced FSI for improved F#ing!
+
+Features will (hopefully) include:
+* Autocompletion
+* Font scaling
+* Save / Restore sessions & workspaces
+
+Pull Requests welcome!
 
 ##### Development Notes #####
 * [VSSDK Extensibility Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
