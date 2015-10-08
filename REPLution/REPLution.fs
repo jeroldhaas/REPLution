@@ -7,7 +7,6 @@ open Microsoft.FSharp.Compiler.Interactive
 open Microsoft.FSharp.Compiler.Interactive.RuntimeHelpers
 open Microsoft.FSharp.Compiler.Interactive.Settings
 
-open FSharp.Core.Fluent
 
 module REPLution =
     let startRepl =

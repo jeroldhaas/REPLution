@@ -1,0 +1,9 @@
+FSharp.Core
+FSharp.Core.Fluent-4.0
+Microsoft.VisualStudio.CoreUtility
+Microsoft.VisualStudio.Text.Data
+Microsoft.VisualStudio.Text.Logic
+Microsoft.VisualStudio.Text.UI
+Microsoft.VisualStudio.Text.UI.Wpf
+Microsoft.VSSDK.BuildTools
+FSharp.Compiler.Service
