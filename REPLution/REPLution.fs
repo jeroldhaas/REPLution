@@ -11,5 +11,5 @@ open FSharp.Core.Fluent
 
 module REPLution =
     let startRepl =
-        let shell = new Microsoft.FSharp.Compiler.Interactive.InteractiveSession()
-        shell.
+        //let shell = new Microsoft.FSharp.Compiler.Interactive.InteractiveSession()
+        ()
