@@ -19,3 +19,4 @@ Pull Requests welcome!
 * [FSharp Compiler Service](https://github.com/fsharp/FSharp.Compiler.Service/blob/master/src/fsharp/fsi/fsi.fs#L2435-2435)
 * [Visual FSharp](https://github.com/Microsoft/visualfsharp/blob/master/src/fsharp/fsi/fsi.fs)
 * [Interactive Service: Embedding F# Interactive](https://fsharp.github.io/FSharp.Compiler.Service/interactive.html)
+* [Saving DynamicAssembly](https://github.com/fsharp/FSharp.Compiler.Service/pull/365)
