@@ -7,19 +7,19 @@ open System
 open System.IO
 open System.Text
 
-// Intialize output and input streams
+/// Intialize output and input streams
 let sbOut = new StringBuilder()
 let sbErr = new StringBuilder()
 let inStream = new StringReader("")
 let outStream = new StringWriter(sbOut)
 let errStream = new StringWriter(sbErr)
 
-// Build command line arguments & start FSI session
+/// Build command line arguments & start FSI session
 let argv = [| "C:\\fsi.exe" |]
 let allArgs = Array.append argv [|"--noninteractive"|]
 
 let fsiConfig = FsiEvaluationSession.GetDefaultConfiguration()
-let fsiSession = FsiEvaluationSession.Create(fsiConfig, allArgs, inStream, outStream, errStream)  
+let fsiSession = FsiEvaluationSession.Create(fsiConfig, allArgs, inStream, outStream, errStream)
 
 /// Evaluate expression & return the result
 let evalExpression text =
@@ -29,7 +29,7 @@ let evalExpression text =
 
 
 /// Evaluate interaction & ignore the result
-let evalInteraction text = 
+let evalInteraction text =
   fsiSession.EvalInteraction(text)
 
 
@@ -37,7 +37,7 @@ evalExpression "42+1"
 evalInteraction "printfn \"bye\""
 
 /// Evaluate script & ignore the result
-let evalScript scriptPath = 
+let evalScript scriptPath =
   fsiSession.EvalScript(scriptPath)
 
 File.WriteAllText("sample.fsx", "let twenty = 10 + 10")
@@ -47,7 +47,9 @@ evalScript "sample.fsx"
 
 
 
-let collectionTest() = 
+let collectionTest() =
+
+    let _ = printfn "hi"
 
     for i in 1 .. 200 do
         let defaultArgs = [|"fsi.exe";"--noninteractive";"--nologo";"--gui-"|]
@@ -57,12 +59,13 @@ let collectionTest() =
 
         let fsiConfig = FsiEvaluationSession.GetDefaultConfiguration()
         use session = FsiEvaluationSession.Create(fsiConfig, defaultArgs, inStream, outStream, errStream, collectible=true)
-        
+
         session.EvalInteraction (sprintf "type D = { v : int }")
         let v = session.EvalExpression (sprintf "{ v = 42 * %d }" i)
         printfn "iteration %d, result = %A" i v.Value.ReflectionValue
 
+        /// NOTE: example of saving DyamicAssembly
+        let assemBuilder = session.DynamicAssembly :?> System.Reflection.Emit.AssemblyBuilder
+        assemBuilder.Save("fsi-assembly.dll")
+
 collectionTest() // <-- run the test like this
-
-
-    
