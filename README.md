@@ -3,6 +3,7 @@ Enhanced FSI for improved F#ing!
 
 Features will (hopefully) include:
 * Autocompletion
+* Syntax highlighting (a-la-VFPT or other grammar method)
 * Font scaling / honor font settings (like python interactive)
 * Save / Restore bindings & workspace view to show current bindings (shadowed bindings stripped)
 * Save command history
