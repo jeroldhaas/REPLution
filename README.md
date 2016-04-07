@@ -12,6 +12,7 @@ Pull Requests welcome!
 ---
 
 ##### Development Notes #####
+* [FsEye](https://github.com/SwensenSoftware/fseye)
 * [VSSDK Extensibility Samples](https://github.com/Microsoft/VSSDK-Extensibility-Samples)
 * [Extending the Properties, Task List, Output, and Options Windows](https://msdn.microsoft.com/en-us/library/cc138529.aspx?f=255&MSPPError=-2147217396)
 * [Shell (Isolated or Integrated)](https://msdn.microsoft.com/en-us/library/bb685612.aspx)

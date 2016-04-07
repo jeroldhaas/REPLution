@@ -7,3 +7,4 @@ Microsoft.VisualStudio.Text.UI
 Microsoft.VisualStudio.Text.UI.Wpf
 Microsoft.VSSDK.BuildTools
 FSharp.Compiler.Service
+FsEye
