@@ -1,0 +1,6 @@
+[submodule "submodules/FSharp.Interactive.Intellisense"]
+	path = submodules/FSharp.Interactive.Intellisense
+	url = https://github.com/vlasenkoalexey/FSharp.Interactive.Intellisense.git
+[submodule "submodules/xamarin-monodevelop-fsharp-addin"]
+	path = submodules/xamarin-monodevelop-fsharp-addin
+	url = https://github.com/fsharp/xamarin-monodevelop-fsharp-addin.git
