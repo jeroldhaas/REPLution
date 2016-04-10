@@ -1,25 +1,72 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{6EBB776A-ADD9-4565-95FA-5288C5FCA679}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
 	EndProjectSection
 EndProject
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "REPLution", "REPLution\REPLution.fsproj", "{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "REPLution", "REPLution\REPLution.fsproj", "{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C11CC135-6202-4B18-B737-6AA98FBD5B39}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A40BF636-F1AA-440D-95D6-62035D173D4E}"
 	ProjectSection(SolutionItems) = preProject
 		CHANGELOG.md = CHANGELOG.md
+		submodules\FSharp.Interactive.Intellisense\LICENSE.md = submodules\FSharp.Interactive.Intellisense\LICENSE.md
 		REPLution\docs\README.md = REPLution\docs\README.md
+		submodules\FSharp.Interactive.Intellisense\README.md = submodules\FSharp.Interactive.Intellisense\README.md
+		submodules\FSharp.Interactive.Intellisense\TODO.md = submodules\FSharp.Interactive.Intellisense\TODO.md
 		WE-Markdown.css = WE-Markdown.css
 		WE-Markdown.html = WE-Markdown.html
 		WE-Palette.css = WE-Palette.css
 	EndProjectSection
 EndProject
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "ConsoleRepl", "ConsoleRepl\ConsoleRepl.fsproj", "{9064AD15-9067-4D24-AF9D-1D1133D8337B}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ConsoleRepl", "ConsoleRepl\ConsoleRepl.fsproj", "{9064AD15-9067-4D24-AF9D-1D1133D8337B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference Projects", "Reference Projects", "{3F613806-69D1-41F5-8256-E0FEFD529DC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSharp.Interactive.Intellisense", "submodules\FSharp.Interactive.Intellisense\FSharp.Interactive.Intellisense\FSharp.Interactive.Intellisense.csproj", "{6C599DED-3D3D-4EBC-8607-0B9529323271}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Interactive.Intellisense.Lib", "submodules\FSharp.Interactive.Intellisense\FSharp.Interactive.Intellisence.Lib\FSharp.Interactive.Intellisense.Lib.fsproj", "{0D841E3A-9F5E-4882-A95A-6ACF08BDE08A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A40BF636-F1AA-440D-95D6-62035D173D4E}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		submodules\FSharp.Interactive.Intellisense\LICENSE.md = submodules\FSharp.Interactive.Intellisense\LICENSE.md
+		REPLution\docs\README.md = REPLution\docs\README.md
+		submodules\FSharp.Interactive.Intellisense\README.md = submodules\FSharp.Interactive.Intellisense\README.md
+		submodules\FSharp.Interactive.Intellisense\TODO.md = submodules\FSharp.Interactive.Intellisense\TODO.md
+		WE-Markdown.css = WE-Markdown.css
+		WE-Markdown.html = WE-Markdown.html
+		WE-Palette.css = WE-Palette.css
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Interactive.Intellisense.Lib.Test", "submodules\FSharp.Interactive.Intellisense\FSharp.Interactive.Intellisense.Lib.Test\FSharp.Interactive.Intellisense.Lib.Test.fsproj", "{F032CD00-5650-482E-A69D-0C59761EC398}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F8AD5EDB-E571-42C1-B3D5-91D7D1D663FC}"
+	ProjectSection(SolutionItems) = preProject
+		submodules\FSharp.Interactive.Intellisense\.nuget\packages.config = submodules\FSharp.Interactive.Intellisense\.nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "md-fsharp-addin", "md-fsharp-addin", "{7D6525D3-9421-4B0E-93BE-0D1B815343EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{165E4D13-19CC-4FCA-B4EC-F86DA08E6003}"
+	ProjectSection(SolutionItems) = preProject
+		submodules\xamarin-monodevelop-fsharp-addin\paket.dependencies = submodules\xamarin-monodevelop-fsharp-addin\paket.dependencies
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelop.FSharp.Gui", "submodules\xamarin-monodevelop-fsharp-addin\MonoDevelop.FSharp.Gui\MonoDevelop.FSharp.Gui.csproj", "{FD0D1033-9145-48E5-8ED8-E2365252878C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MonoDevelop.FSharp", "submodules\xamarin-monodevelop-fsharp-addin\MonoDevelop.FSharpBinding\MonoDevelop.FSharp.fsproj", "{4C10F8F9-3816-4647-BA6E-85F5DE39883A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MonoDevelop.FSharp.Tests", "submodules\xamarin-monodevelop-fsharp-addin\MonoDevelop.FSharp.Tests\MonoDevelop.FSharp.Tests.fsproj", "{A1A45375-7FB8-4F2A-850F-FBCC67739927}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MonoDevelop.FSharpInteractive.Service", "submodules\xamarin-monodevelop-fsharp-addin\MonoDevelop.FSharpi.Service\MonoDevelop.FSharpInteractive.Service.fsproj", "{20D6EC2C-B62E-49D1-B685-90D8967A5B5D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MonoDevelop.FSharp.Shared", "submodules\xamarin-monodevelop-fsharp-addin\MonoDevelop.FSharp.Shared\MonoDevelop.FSharp.Shared.fsproj", "{AF5FEAD5-B50E-4F07-A274-32F23D5C504D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fsi-interactive", "fsi-interactive", "{ED368363-4535-467F-9EE4-005207BB02D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,18 +74,63 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A12BDD9E-071E-4D34-B0CD-2A1E429A695E}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
+		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9064AD15-9067-4D24-AF9D-1D1133D8337B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C599DED-3D3D-4EBC-8607-0B9529323271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C599DED-3D3D-4EBC-8607-0B9529323271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C599DED-3D3D-4EBC-8607-0B9529323271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C599DED-3D3D-4EBC-8607-0B9529323271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D841E3A-9F5E-4882-A95A-6ACF08BDE08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D841E3A-9F5E-4882-A95A-6ACF08BDE08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D841E3A-9F5E-4882-A95A-6ACF08BDE08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D841E3A-9F5E-4882-A95A-6ACF08BDE08A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F032CD00-5650-482E-A69D-0C59761EC398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F032CD00-5650-482E-A69D-0C59761EC398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F032CD00-5650-482E-A69D-0C59761EC398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F032CD00-5650-482E-A69D-0C59761EC398}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0D1033-9145-48E5-8ED8-E2365252878C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0D1033-9145-48E5-8ED8-E2365252878C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0D1033-9145-48E5-8ED8-E2365252878C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0D1033-9145-48E5-8ED8-E2365252878C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C10F8F9-3816-4647-BA6E-85F5DE39883A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C10F8F9-3816-4647-BA6E-85F5DE39883A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C10F8F9-3816-4647-BA6E-85F5DE39883A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C10F8F9-3816-4647-BA6E-85F5DE39883A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A45375-7FB8-4F2A-850F-FBCC67739927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A45375-7FB8-4F2A-850F-FBCC67739927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A45375-7FB8-4F2A-850F-FBCC67739927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A45375-7FB8-4F2A-850F-FBCC67739927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D6EC2C-B62E-49D1-B685-90D8967A5B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D6EC2C-B62E-49D1-B685-90D8967A5B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D6EC2C-B62E-49D1-B685-90D8967A5B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D6EC2C-B62E-49D1-B685-90D8967A5B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF5FEAD5-B50E-4F07-A274-32F23D5C504D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF5FEAD5-B50E-4F07-A274-32F23D5C504D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF5FEAD5-B50E-4F07-A274-32F23D5C504D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF5FEAD5-B50E-4F07-A274-32F23D5C504D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0CBAC33B-4EBF-406B-AF26-9CEF0E77E1E0} = {3F613806-69D1-41F5-8256-E0FEFD529DC8}
+		{6C599DED-3D3D-4EBC-8607-0B9529323271} = {ED368363-4535-467F-9EE4-005207BB02D3}
+		{0D841E3A-9F5E-4882-A95A-6ACF08BDE08A} = {ED368363-4535-467F-9EE4-005207BB02D3}
+		{F032CD00-5650-482E-A69D-0C59761EC398} = {ED368363-4535-467F-9EE4-005207BB02D3}
+		{F8AD5EDB-E571-42C1-B3D5-91D7D1D663FC} = {3F613806-69D1-41F5-8256-E0FEFD529DC8}
+		{7D6525D3-9421-4B0E-93BE-0D1B815343EE} = {3F613806-69D1-41F5-8256-E0FEFD529DC8}
+		{165E4D13-19CC-4FCA-B4EC-F86DA08E6003} = {7D6525D3-9421-4B0E-93BE-0D1B815343EE}
+		{FD0D1033-9145-48E5-8ED8-E2365252878C} = {7D6525D3-9421-4B0E-93BE-0D1B815343EE}
+		{4C10F8F9-3816-4647-BA6E-85F5DE39883A} = {7D6525D3-9421-4B0E-93BE-0D1B815343EE}
+		{A1A45375-7FB8-4F2A-850F-FBCC67739927} = {7D6525D3-9421-4B0E-93BE-0D1B815343EE}
+		{20D6EC2C-B62E-49D1-B685-90D8967A5B5D} = {7D6525D3-9421-4B0E-93BE-0D1B815343EE}
+		{AF5FEAD5-B50E-4F07-A274-32F23D5C504D} = {7D6525D3-9421-4B0E-93BE-0D1B815343EE}
+		{ED368363-4535-467F-9EE4-005207BB02D3} = {3F613806-69D1-41F5-8256-E0FEFD529DC8}
 	EndGlobalSection
 EndGlobal

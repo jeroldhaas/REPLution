@@ -8,7 +8,7 @@ open Microsoft.FSharp.Compiler.Interactive.RuntimeHelpers
 open Microsoft.FSharp.Compiler.Interactive.Settings
 
 
-module REPLution =
+module Core =
     let inline (</) f x = x f
     let inline (/>) f x = f x
     

@@ -99,7 +99,7 @@ let (parseResults', checkFileResults', checkProjectResults') =
 let commandHistory = fsiSession.DynamicAssembly.CodeBase
 let sb     = new StringBuilder(commandHistory)
 let writer = new StringWriter(sb)
-let file   = File.Open(""".\FSI-History.fsx""", FileMode.OpenOrCreate)
+let file   = File.Open("""./FSI-History.fsx""", FileMode.OpenOrCreate)
 // ... and so on
 
 
@@ -112,7 +112,7 @@ let file   = File.Open(""".\FSI-History.fsx""", FileMode.OpenOrCreate)
 let assemBuilder = fsiSession.DynamicAssembly :?> System.Reflection.Emit.AssemblyBuilder
 //let saveAssemBuilder = { fsiSession.DynamicAssembly with Name="mySession.dll" }
 
-assemBuilder.Save("C:\\Projects\FSI-ASSEMBLY.dll")
+assemBuilder.Save("""./FSI-ASSEMBLY.dll""")
 
 
 /// ## Load from DLL ##

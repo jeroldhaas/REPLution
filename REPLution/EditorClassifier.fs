@@ -1,4 +1,4 @@
-﻿namespace REPLution
+﻿namespace REPLution.Core
 
 open Microsoft.VisualStudio.Text.Editor
 open Microsoft.VisualStudio.Text.Tagging
